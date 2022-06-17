@@ -1,5 +1,15 @@
 # Flutter 快速上手
 
+## 功能展示
+
+- Splash 启动屏
+- Welcome 欢迎屏
+- Login 登录界面
+
+![](https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134126.png)
+
+![](https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134139.png)
+
 ## 环境
 
 ```sh
