@@ -1,0 +1,9 @@
+static const logoPng = 'assets/images/logo.png';
+static const welcomePng = 'assets/images/welcome.png';
+static const iconFavouritePng = 'assets/images/icon_favourite.png';
+static const iconOffersPng = 'assets/images/icon_offers.png';
+static const iconLockPng = 'assets/images/icon_lock.png';
+static const iconOrderPng = 'assets/images/icon_order.png';
+static const iconMapPng = 'assets/images/icon_map.png';
+static const iconPaymentPng = 'assets/images/icon_payment.png';
+static const iconUserPng = 'assets/images/icon_user.png';
