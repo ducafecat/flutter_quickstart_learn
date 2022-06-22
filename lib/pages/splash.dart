@@ -40,7 +40,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: AppColors.bg1,
+        color: AppColors.backgroundSplash,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

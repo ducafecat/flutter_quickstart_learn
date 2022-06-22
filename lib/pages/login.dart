@@ -10,8 +10,10 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // 账号输入是否有效
   bool isUserNameValid = false;
 
+  // 登录表单
   Widget _buildForm() {
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 50, 20, 20),
@@ -19,8 +21,7 @@ class _LoginPageState extends State<LoginPage> {
         color: Colors.white,
         borderRadius: BorderRadius.circular(35),
       ),
-      child: Form(
-          child: Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Username or E-Mail
@@ -32,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
               fontWeight: FontWeight.w300,
             ),
           ),
-          TextFormField(
+          TextField(
             onChanged: (value) {
               bool valid = false;
               if (value.length >= 6) {
@@ -79,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
               fontWeight: FontWeight.w300,
             ),
           ),
-          TextFormField(
+          TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: "6 digits",
@@ -151,14 +152,15 @@ class _LoginPageState extends State<LoginPage> {
             ],
           ),
         ],
-      )),
+      ),
     );
   }
 
+  // 主视图
   Widget _buildView() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      color: AppColors.bg1,
+      color: AppColors.backgroundSplash,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -171,22 +173,26 @@ class _LoginPageState extends State<LoginPage> {
           const SizedBox(height: 20),
 
           // 主标
-          const Text("Let’s Sign You In",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              )),
+          const Text(
+            "Let’s Sign You In",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
 
           const SizedBox(height: 10),
 
           // 子标
-          const Text("Welcome back, you’ve been missed!",
-              style: TextStyle(
-                fontSize: 13,
-                color: Colors.white,
-                fontWeight: FontWeight.w300,
-              )),
+          const Text(
+            "Welcome back, you’ve been missed!",
+            style: TextStyle(
+              fontSize: 13,
+              color: Colors.white,
+              fontWeight: FontWeight.w300,
+            ),
+          ),
 
           const SizedBox(height: 50),
 
