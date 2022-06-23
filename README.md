@@ -5,12 +5,10 @@
 - Splash 启动屏
 - Welcome 欢迎屏
 - Login 登录界面
+- 多端运行 ios、android、macos、windows、linux、web
 
-<img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/image-20220622222532040.png" alt="image-20220622222532040" style="zoom:25%;" />
-
-<img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134126.png" style="zoom:25%;" />
-
-<img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134139.png" style="zoom:25%;" />
+| <img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/image-20220623092347578.png" alt="image-20220623092347578" style="zoom:25%;" /> | <img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134126.png" style="zoom:25%;" /> | <img src="https://ducafecat.oss-cn-beijing.aliyuncs.com/podcast/20220617134139.png" style="zoom:25%;" /> |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 
 ## 环境
 
