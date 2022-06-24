@@ -1,5 +1,9 @@
 # Flutter 快速上手
 
+## 视频地址
+
+https://video.ducafecat.tech/#/course_course_detail?uri=flutter-quickstart-learn
+
 ## 功能展示
 
 - Splash 启动屏
