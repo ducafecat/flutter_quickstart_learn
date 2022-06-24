@@ -159,7 +159,7 @@ class _LoginPageState extends State<LoginPage> {
   // 主视图
   Widget _buildView() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.fromLTRB(15, 150, 15, 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
