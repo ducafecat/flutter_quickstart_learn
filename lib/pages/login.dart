@@ -160,7 +160,6 @@ class _LoginPageState extends State<LoginPage> {
   Widget _buildView() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      color: AppColors.backgroundSplash,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -206,7 +205,8 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _buildView(),
+      backgroundColor: AppColors.backgroundSplash,
+      body: SingleChildScrollView(child: _buildView()),
     );
   }
 }
