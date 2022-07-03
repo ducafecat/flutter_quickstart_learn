@@ -19,28 +19,27 @@ class ButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width: widget,
-      clipBehavior: Clip.antiAlias,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(
-          Radius.circular(radius ?? 18),
+    // 直接用 ElevatedButton 组件就可以了
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ButtonStyle(
+        elevation: MaterialStateProperty.all(0),
+        minimumSize: MaterialStateProperty.all(
+            Size(widget ?? double.infinity, height ?? double.infinity)),
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(radius ?? 18),
+            ),
+          ),
         ),
       ),
-      child: ElevatedButton(
-        onPressed: onPressed,
-        style: ButtonStyle(
-          elevation: MaterialStateProperty.all(0),
-          minimumSize: MaterialStateProperty.all(Size.zero),
-        ),
-        child: Text(
-          text ?? "",
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w300,
-            color: Colors.white,
-          ),
+      child: Text(
+        text ?? "",
+        style: const TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w300,
+          color: Colors.white,
         ),
       ),
     );

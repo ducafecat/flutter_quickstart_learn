@@ -18,9 +18,11 @@ class _SplashPageState extends State<SplashPage> {
     const int duration = 3;
     for (int i = 0; i < duration; i++) {
       await Future.delayed(const Duration(seconds: 1), () {
-        setState(() {
-          number--;
-        });
+        if (mounted == true) {
+          setState(() {
+            number--;
+          });
+        }
       });
       // 倒计时结束, 进入 welcome
       if (number == 0) {
