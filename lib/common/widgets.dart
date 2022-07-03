@@ -11,21 +11,32 @@ class ButtonWidget extends StatelessWidget {
     this.text,
   }) : super(key: key);
 
+  /// 文字
   final String? text;
+
+  /// 高度
   final double? height;
+
+  /// 宽度
   final double? widget;
+
+  /// 圆角
   final double? radius;
+
+  /// 点击事件
   final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
-    // 直接用 ElevatedButton 组件就可以了
     return ElevatedButton(
       onPressed: onPressed,
       style: ButtonStyle(
+        // 阴影高度
         elevation: MaterialStateProperty.all(0),
+        // 最小尺寸
         minimumSize: MaterialStateProperty.all(
             Size(widget ?? double.infinity, height ?? double.infinity)),
+        // 形状 圆角
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.all(
@@ -35,7 +46,9 @@ class ButtonWidget extends StatelessWidget {
         ),
       ),
       child: Text(
+        // 文字
         text ?? "",
+        // 文字样式
         style: const TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w300,
